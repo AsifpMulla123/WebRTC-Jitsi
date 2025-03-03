@@ -22,6 +22,14 @@ function App() {
               startWithAudioMuted: false,
               startWithVideoMuted: false,
             }}
+            interfaceConfigOverwrite={{
+              SHOW_JITSI_WATERMARK: false,
+              SHOW_WATERMARK_FOR_GUESTS: false,
+              SHOW_BRAND_WATERMARK: false,
+              BRAND_WATERMARK_LINK: "",
+              MOBILE_APP_PROMO: false,
+              SHOW_PROMOTIONAL_CLOSE_PAGE: false,
+            }}
             getIFrameRef={(iframeRef) => {
               iframeRef.style.height = "500px";
               iframeRef.style.width = "100%";
