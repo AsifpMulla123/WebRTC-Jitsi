@@ -19,8 +19,11 @@ function App() {
             domain="meet.jit.si"
             roomName="MyAwesomeMeeting"
             configOverwrite={{
-              startWithAudioMuted: false,
+              startWithAudioMuted: true,
               startWithVideoMuted: false,
+              prejoinPageEnabled: false,
+              disableDeepLinking: true,
+              defaultLanguage: "en",
             }}
             interfaceConfigOverwrite={{
               SHOW_JITSI_WATERMARK: false,
